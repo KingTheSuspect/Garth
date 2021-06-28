@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
 
-	public Text nameText;
-	public Text dialogueText;
+	public TMPro.TextMeshPro nameText;
+	public TMPro.TextMeshPro dialogueText;
 	public DialogueTrigger dialogueTrigger;
 
 
