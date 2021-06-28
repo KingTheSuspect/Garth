@@ -14,20 +14,17 @@ public class Player : MonoBehaviour
     {
         agirlik = GetComponent<Rigidbody2D>();
     }
+
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.W) && yerdemi)
         {
 
             agirlik.AddForce(Vector2.up * ziplama);
-           
+
 
         }
-
-    }
-
-    void FixedUpdate()
-    {
         float h = Input.GetAxis("Horizontal");
 
 
