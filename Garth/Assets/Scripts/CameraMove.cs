@@ -8,6 +8,7 @@ public class CameraMove : MonoBehaviour
 
 	public Camera cam;
 	public GameObject Player;
+	public float tp, cameratp;
 	public enum HangiYon {Sag,Sol}
 	public HangiYon yon;
 
@@ -16,13 +17,13 @@ public class CameraMove : MonoBehaviour
 	{
 		if (yon == HangiYon.Sol)
 		{
-			cam.transform.Translate(new Vector2(-190, 0) * 5f * Time.deltaTime);
-			Player.transform.Translate(new Vector2(-25, 0) * 5f * Time.deltaTime);
+			cam.transform.Translate(new Vector2(cameratp, 0) * 5f * Time.deltaTime);
+			Player.transform.Translate(new Vector2(tp, 0) * 5f * Time.deltaTime);
 		}
 		if (yon == HangiYon.Sag)
 		{
-			cam.transform.Translate(new Vector2(190, 0) * 5f * Time.deltaTime);
-			Player.transform.Translate(new Vector2(25, 0) * 5f * Time.deltaTime);
+			cam.transform.Translate(new Vector2(cameratp, 0) * 5f * Time.deltaTime);
+			Player.transform.Translate(new Vector2(tp, 0) * 5f * Time.deltaTime);
 		}
 	}
 }

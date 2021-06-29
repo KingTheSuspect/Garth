@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 335976865}
   - component: {fileID: 335976864}
   m_Layer: 0
-  m_Name: TP (2)
+  m_Name: Sol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,6 +370,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420031}
   Player: {fileID: 1147543187}
+  tp: -50
+  cameratp: -202
   yon: 1
 --- !u!61 &335976865
 BoxCollider2D:
@@ -405,7 +407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335976862}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.6, y: 1.9859645, z: -3.5419405}
+  m_LocalPosition: {x: 10.1, y: 1.9859645, z: -3.5419405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5416,7 +5418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -211.37, y: -122.19}
+  m_AnchoredPosition: {x: -211.2, y: -122.9}
   m_SizeDelta: {x: 8.9168, y: 2.5014}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &511075115
@@ -5896,7 +5898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -213.06, y: -122.34}
+  m_AnchoredPosition: {x: -212.89, y: -123.049995}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &586677823
@@ -6032,7 +6034,7 @@ GameObject:
   - component: {fileID: 699154567}
   - component: {fileID: 699154569}
   m_Layer: 0
-  m_Name: TP (1)
+  m_Name: "Sa\u011F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6072,7 +6074,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699154566}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.7, y: 1.9859645, z: -3.5419405}
+  m_LocalPosition: {x: -10.24, y: 1.9859645, z: -3.5419405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6092,6 +6094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420031}
   Player: {fileID: 1147543187}
+  tp: 50
+  cameratp: 202
   yon: 0
 --- !u!1 &711540021
 GameObject:
@@ -6123,7 +6127,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 20.885113, y: -3.1222672}
+  m_Offset: {x: 9.854437, y: -3.1222672}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6134,7 +6138,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 73.313446, y: 0.77351475}
+  m_Size: {x: 95.37479, y: 0.77351475}
   m_EdgeRadius: 0
 --- !u!4 &711540023
 Transform:
@@ -6245,7 +6249,7 @@ GameObject:
   - component: {fileID: 1082783705}
   - component: {fileID: 1082783704}
   m_Layer: 0
-  m_Name: TP (3)
+  m_Name: Sol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6265,6 +6269,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420031}
   Player: {fileID: 1147543187}
+  tp: -50
+  cameratp: -202
   yon: 1
 --- !u!61 &1082783705
 BoxCollider2D:
@@ -6300,7 +6306,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082783703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.55, y: 1.9859645, z: -3.5419405}
+  m_LocalPosition: {x: -10.09, y: 1.9859645, z: -3.5419405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6489,7 +6495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -213.06, y: -121.490005}
+  m_AnchoredPosition: {x: -212.89, y: -122.200005}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188633501
@@ -6742,7 +6748,7 @@ GameObject:
   - component: {fileID: 1599786479}
   - component: {fileID: 1599786478}
   m_Layer: 0
-  m_Name: TP
+  m_Name: "Sa\u011F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6762,6 +6768,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420031}
   Player: {fileID: 1147543187}
+  tp: 50
+  cameratp: 202
   yon: 0
 --- !u!61 &1599786479
 BoxCollider2D:
@@ -6797,7 +6805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599786477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.4, y: 1.9859645, z: -3.5419405}
+  m_LocalPosition: {x: 9.9, y: 1.9859645, z: -3.5419405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
