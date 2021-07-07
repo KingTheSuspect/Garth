@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 
     public float hiz, ziplama;
     public bool yerdemi;
+    public enum HangiYon { Sag, Sol };
+    public HangiYon yon;
 
     Rigidbody2D agirlik;
 
@@ -32,11 +34,14 @@ public class Player : MonoBehaviour
         {
             transform.localScale = new Vector2(1, 1);
             transform.Translate(h * hiz * Time.deltaTime, 0, 0);
+            yon = HangiYon.Sag;
+
         }
         if (h < -0.1f)
         {
             transform.localScale = new Vector2(-1, 1);
             transform.Translate(h * hiz * Time.deltaTime, 0, 0);
+            yon = HangiYon.Sol;
         }
     }
     public void OnCollisionEnter2D(Collision2D col)

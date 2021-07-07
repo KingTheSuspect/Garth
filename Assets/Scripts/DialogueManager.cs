@@ -32,7 +32,7 @@ public class DialogueManager : MonoBehaviour
 			sentences.Enqueue(sentence);
 		}
 
-		DisplayNextSentence();
+		//DisplayNextSentence();
 	}
 
 	public void DisplayNextSentence()
@@ -64,6 +64,7 @@ public class DialogueManager : MonoBehaviour
 		
 	    dialogueTrigger.Canvasa.SetActive(false);
 		Time.timeScale = 1;
+		dialogueTrigger.sayar = 0;
 	}
 
 }
