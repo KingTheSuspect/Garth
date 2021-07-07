@@ -8,8 +8,8 @@ public class BowArrow : MonoBehaviour
     public float force;
     public Transform shotPoint;
     public Animator animator;
-    public Player HangiYon;
-    //public HangiYon yon;
+    public enum HangiYon { Sag, Sol };
+    public static HangiYon yon;
 
 
     // Update is called once per frame
@@ -26,11 +26,16 @@ public class BowArrow : MonoBehaviour
     }
     void Shoot()
     {
-       // if (yon = Player.HangiYon.Sag)
-       // {
+        if (yon == HangiYon.Sag)
+        {
             GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
             newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * force;
-       // }
+        }
+        if (yon == HangiYon.Sol)
+        {
+            GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
+            newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * (force * -1) ;
+        }
 
     }
 
